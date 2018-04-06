@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var reverseLabel: UILabel!
     
     let message = "Hi, How are you ?"
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         print(message)
         print(reverse(text: message))
+        reverseLabel.text = message
     }
 
     override func didReceiveMemoryWarning() {
